@@ -1,0 +1,39 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "babel-node ./server/server.js",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-react-transform": "^1.0.5",
+    "browser-sync": "^2.9.3",
+    "css-loader": "^0.18.0",
+    "gulp": "^3.9.0",
+    "gulp-exit": "0.0.2",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-watch": "^4.3.5",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "react-transform-catch-errors": "^0.2.0",
+    "react-transform-webpack-hmr": "^0.1.5",
+    "redux-devtools": "^2.1.2",
+    "style-loader": "^0.12.3",
+    "webpack": "*",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.1.0",
+    "webpack-stream": "^2.1.0"
+  },
+  "dependencies": {
+    "babel": "^5.8.23",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "react": "^0.13.3",
+    "react-redux": "^2.1.2",
+    "redux": "^3.0.0"
+  }
+}
