@@ -9,6 +9,7 @@
     "test:watch": "npm run test -- --watch"
   },
   "devDependencies": {
+    "babel": "^5.8.23",
     "babel-core": "*",
     "babel-loader": "*",
     "babel-plugin-react-transform": "^1.0.5",
