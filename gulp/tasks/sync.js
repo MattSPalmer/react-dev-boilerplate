@@ -1,13 +1,15 @@
 var gulp = require('gulp');
-var sync = require('browser-sync');
-var nodemon = require('gulp-nodemon');
-
 var webpack = require('webpack');
+
+if (process.env.NODE_ENV === 'development') {
+  var sync = require('browser-sync');
+  var nodemon = require('gulp-nodemon');
+  var webpackDevMiddleware = require('webpack-dev-middleware');
+  var webpackHotMiddleware = require('webpack-hot-middleware');
+}
+
 var webpackConfig = require('../../webpack.config');
 var bundler = webpack(webpackConfig.development);
-
-var webpackDevMiddleware = require('webpack-dev-middleware');
-var webpackHotMiddleware = require('webpack-hot-middleware');
 
 gulp.task('sync', function () {
     sync.init(null, {
