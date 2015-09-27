@@ -1,3 +1,4 @@
 import React from 'react';
+import App from './components/App.js';
 
-React.render(<h1>Hello World!</h1>, document.getElementById('root'));
+React.render(<App />, document.getElementById('root'));

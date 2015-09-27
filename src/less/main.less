@@ -1,10 +1,27 @@
-body {
-    font-family: 'Open Sans';
-    }
-
-div {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    }
+.general {
+  composes: general from './core.less';
+  composes: mediumPad from './layout.less';
+  clear   : left;
+  float   : left;
+  width   : auto;
+}
+.header {
+  composes: general;
+  composes: mediumMar from './layout.less';
+  composes: bordered from './theme.less';
+  composes: rot from './animation.less';
+}
+.bigHeader {
+  composes: header;
+  composes: warning from './theme.less';
+  composes: large from './type.less';
+}
+.mediumHeader {
+  composes: header;
+  composes: error from './theme.less';
+  composes: medium from './type.less';
+}
+.littleHeader {
+  composes: header;
+  composes: small from './type.less';
+}
