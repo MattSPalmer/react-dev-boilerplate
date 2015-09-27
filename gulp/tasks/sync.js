@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var webpack = require('webpack');
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV != 'production') {
   var sync = require('browser-sync');
   var nodemon = require('gulp-nodemon');
   var webpackDevMiddleware = require('webpack-dev-middleware');
