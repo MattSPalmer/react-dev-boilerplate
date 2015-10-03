@@ -1,4 +1,15 @@
 import React from 'react';
-import App from './components/App.js';
+import {Provider} from 'react-redux';
 
-React.render(<App />, document.getElementById('root'));
+import App from './components/App';
+
+import makeStore from './makeStore';
+
+const store = makeStore();
+
+React.render(
+  <Provider store={store}>
+    {() => <App />}
+  </Provider>,
+  document.getElementById('main')
+);
