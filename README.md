@@ -1,15 +1,21 @@
-# webpack ES6 demo
+# webpack + react.js + hot reloading
 
-A small demo project that shows how to use webpack for client-side development in ECMAScript 6.
+Fork of [a project by rauschma](https://github.com/rauschma/webpack-es6-demo). This project shows how to use webpack for client-side React development in ECMAScript 6.
 
-## Installation
+Includes:
+* hot reloading (courtesy of gaearon's [babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform) and [react-transform-hmr](https://github.com/gaearon/react-transform-hmr))
+* [CSS Modules](http://glenmaddern.com/articles/css-modules)
+
+
+
+## installation
 
 * Install  [node](https://nodejs.org)
 * run `npm install`
 
-## Usage
+## usage
 
-* `npm run watch` to start Webpack in watch mode - will recompile when you change a file.
-* open `index.html` in a browser. 
-* Change or add files in `es6` folder. `main.js` is the entry point.
+* `gulp` to start gulp in watch mode - webpack will recompile when you change a JS or LESS file.
+* open `localhost:7000` in a browser.
+* Change or add files in `src/js` folder. `main.js` is the entry point.
 * Reload the browser when you have made a change.
