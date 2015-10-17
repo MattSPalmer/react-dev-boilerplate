@@ -18,4 +18,3 @@ Includes:
 * `gulp` to start gulp in watch mode - webpack will recompile when you change a JS or LESS file.
 * open `localhost:7000` in a browser.
 * Change or add files in `src/js` folder. `main.js` is the entry point.
-* Reload the browser when you have made a change.
